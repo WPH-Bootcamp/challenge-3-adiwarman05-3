@@ -15,12 +15,15 @@ body {
 @theme {
   /* ▶️ COLORS */
   --color-primary: #421abc;
-  --color-black: #000000;
+  --color-secondary: #210a5e;
   --color-neutral-25: #fdfdfd;
   --color-neutral-500: #717680;
   --color-neutral-800: #252b37;
   --color-neutral-900: #181d27;
 }
 .container {
-  @apply w-full max-w-360 min-w-98.5 m-auto;
+  @apply bg-black;
+}
+.title {
+  @apply text-[28px] leading-9.5 font-bold text-neutral-25;
 }
