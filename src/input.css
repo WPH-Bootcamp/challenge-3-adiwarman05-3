@@ -1,1 +1,26 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* ✅ THEME CUSTOMIZATION */
+@theme {
+  /* ▶️ COLORS */
+  --color-primary: #421abc;
+  --color-black: #000000;
+  --color-neutral-25: #fdfdfd;
+  --color-neutral-500: #717680;
+  --color-neutral-800: #252b37;
+  --color-neutral-900: #181d27;
+}
+.container {
+  @apply w-full max-w-360 min-w-98.5 m-auto;
+}
