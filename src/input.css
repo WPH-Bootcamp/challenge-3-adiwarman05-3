@@ -21,9 +21,23 @@ body {
   --color-neutral-800: #252b37;
   --color-neutral-900: #181d27;
 }
-.container {
-  @apply bg-black;
+
+h2 {
+  @apply text-[28px] lg:text-[40px] leading-9.5 lg:leading-14 font-bold text-neutral-25;
 }
-.title {
-  @apply text-[28px] leading-9.5 font-bold text-neutral-25;
+
+h3 {
+  @apply text-base lg:text-xl leading-7.5 lg:leading-8.5 font-normal text-neutral-500;
+}
+
+h4 {
+  @apply text-sm lg:text-lg leading-7 lg:leading-8 font-normal text-neutral-500;
+}
+
+.feature-card {
+  @apply w-41.5 lg:w-93.25 h-70 lg:h-53.5 p-4 lg:p-6 gap-5 border border-neutral-900 rounded-xl flex flex-col justify-start items-center text-center;
+}
+
+.feature-card-text {
+  @apply text-lg leading-8 font-bold text-neutral-25;
 }
