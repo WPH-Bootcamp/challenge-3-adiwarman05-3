@@ -37,7 +37,47 @@ h4 {
 .feature-card {
   @apply w-41.5 lg:w-93.25 h-70 lg:h-53.5 p-4 lg:p-6 gap-5 border border-neutral-900 rounded-xl flex flex-col justify-start items-center text-center;
 }
+.feature-card_container {
+  @apply gap-1;
+}
 
-.feature-card-text {
+.feature-card__text {
   @apply text-lg leading-8 font-bold text-neutral-25;
+}
+
+.testimoni-card {
+  @apply w-90.25 lg:w-93.25 h-101 lg:h-106.75 gap-3.25 lg:gap-5 flex flex-col justify-between;
+}
+
+.testimoni-card__text {
+  @apply font-bold text-neutral-25;
+}
+
+.team-card {
+  @apply w-40 lg:w-55 h-58.5 lg:h-77 gap-3 lg:gap-5 flex flex-col justify-between items-center text-center;
+}
+
+.team-img {
+  @apply w-40 lg:w-55 h-40 lg:h-55 contain-content;
+}
+.team-card__container {
+  @apply gap-1;
+}
+
+.team-card__name {
+  @apply font-bold text-neutral-25;
+}
+
+.input-card__container {
+  @apply h-40.5 gap-1.5 flex flex-col justify-between items-start;
+}
+label {
+  @apply h-7 text-sm leading-7 font-bold text-neutral-25 text-left;
+}
+
+input {
+  @apply h-12 px-4 py-2 text-base leading-7.5 border rounded-xl border-neutral-800 text-neutral-500;
+}
+.input-card__message input {
+  height: 134px;
 }
