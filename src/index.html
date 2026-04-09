@@ -7,10 +7,231 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- ========== NAVBAR ========== -->
+    <!-- 1️⃣ HEADER -->
+    <header>
+      <nav class="navbar h-16 lg:h-21 px-4 lg:px-35 py-3.5 lg:py-6 bg-black">
+        <div class="navbar__wrapper flex flex-row justify-between items-center text-neutral-25">
+          <div class="navbar__logo w-16.25 lg:w-40 h-9 lg:gap-2 font-bold text-2xl leading-9 items-center text-center">Tech.</div>
+          <div class="navbar__menu lg:w-88.25 lg:h-9 lg:gap-3 lg:font-normal lg:text-sm lg:leading-7 lg:flex lg:flex-row lg:justify-between lg:items-center">
+            <a href="#" class="navbar__link lg:gap-1.5">About</a>
+            <a href="#" class="navbar__link lg:gap-1.5">Service</a>
+            <a href="#" class="navbar__link lg:gap-1.5">Our Work</a>
+            <a href="#" class="navbar__link lg:gap-1.5">Team</a>
+          </div>
+          <div class="navbar__button lg:w-40 lg:h-11 lg:rounded-full lg:p-2 lg:gap-1 lg:items-center lg:text-center bg-primary">
+            <a href="#" class="button__navbar lg:font-semibold lg:text-base lg:leading-7.5">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <!-- ========== HERO SECTION ========== -->
+    <!-- 2️⃣ MAIN -->
+    <main>
+      <!-- ✅ HERO -->
+      <section class="hero h-180 lg:h-187.5 px-5 lg:px-35 py-10 gap-4.5 lg:gap-12 bg-linear-to-b from-black to-secondary flex flex-col lg:flex-row justify-between items-center">
+        <div class="hero__container w-88.5 lg:w-171.75 h-76 lg:h-70.5 flex flex-col justify-evenly items-start">
+          <h1 class="hero__title text-[40px] lg:text-[56px] leading-10 lg:leading-17 font-bold text-neutral-25">
+            Build with the <span class="italic">Future.</span>
+          </h1>
+          <h3 class="hero__text">
+            From building sleek website and mobile apps to integrating AI
+            solution, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </h3>
+          <a href="#" class="hero__button w-88.5 lg:w-75 h-12 rounded-full p-2.5 lg:p-2.25 gap-1 text-sm lg:text-base leading-7 lg:leading-7.5 text-center text-white bg-primary">Let's Talk</a>
+        </div>
+        <div>
+          <img
+            src="../assets/images/hand.png"
+            alt="ini gambar logo di smartphone"
+            class="hero__image w-77.2125 lg:w-148.805 h- lg:h-202.25 absolute left-3 lg:left-176 top-99.5 lg:top-6.25 contain-content"
+          />
+        </div>
+      </section>
 
-    <!-- ========== FOOTER ========== -->
+      <!-- ✅ INTRO -->
+      <section class="intro h-61.5 lg:h-83 px-5 lg:px-35 py-10 lg:py-2 bg-black flex flex-col justify-center items-center">
+        <div class="intro__container w-88.5 lg:w-290 gap-4 lg:gap-8 flex flex-col justify-start items-center text-center">
+          <h2 class="intro__title">Who We Are</h2>
+          <p class="intro__text h-28 lg:h-21 text-lg lg:text-[32px] leading-7 lg:leading:10.5 font-semibold text-neutral-500">
+            We're a group of tech students trained in
+            <span class="font-bold">building real-world digital products.</span> From
+            coding to design, we
+            <span class="font-bold">craft modern solution for modern problems.</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- ✅ FEATURE -->
+      <section class="feature h-261.5 lg:h-194 px-4 lg:px-35 py-10 lg:py-20 gap-6 lg:gap-16 bg-black flex flex-col justify-between items-center">
+        <div class="feature__container w-87 lg:w-290 h-25.5 lg:h-26 gap-2 flex flex-col justify-start items-center text-center">
+          <h2 class="feature__title">What We Do</h2>
+          <h4 class="feature__text">
+            We offer simple tech solutions to help your ideas grow.
+          </h4>
+        </div>
+        <div class="feature__grid w-87 lg:w-290 h-218 lg:h-112 gap-4 lg:gap-5 grid grid-cols-2 lg:grid-cols-3 items-center">
+          <div class="feature-card">
+            <img src="../assets/Icon/Website.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">Web Development</p>
+              <h4>
+              Modern websites using HTML, CSS, JavaScript, and frameworks.
+              </h4>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="../assets/Icon/Vector.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">App Development</p>
+              <h4>Mobile and desktop app tailored for your needs.</h4>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="../assets/Icon/AI.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">AI Integration</p>
+              <h4>Smart solutions using AI-powered tools and automation.</h4>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="../assets/Icon/Paint.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">UI/UX Design</p>
+              <h4>Clean and functional designs for better user experiece.</h4>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="../assets/Icon/Landing Page.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">Landing Page Design</p>
+              <h4>High-converting landing pages for your product or business.</h4>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="../assets/Icon/CMS.png" alt="icon" />
+            <div class="feature-card_container">
+              <p class="feature-card__text">CMS Integration</p>
+              <h4>Easy-to-manage websites with WordPress or Webflow.</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ TESTIMONI -->
+      <section class="testimoni h-358 lg:h-188.75 px-5 lg:px-35 py-10 lg:py-20 gap-6 lg:gap-16 bg-black flex flex-col justify-between items-center">
+        <div class="testimoni__container w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4 flex flex-col justify-between items-center text-center">
+          <h2 class="testimoni__title">Our Work</h2>
+          <h3 class="testimoni__text">
+            See what we've built with passion and purpose
+          </h3>
+        </div>
+        <div class="testimoni__flex w-90.25 lg:w-289.75 h-313 lg:h-106.75 gap-5 flex flex-col lg:flex-row justify-between items-center">
+          <div class="testimoni-card">
+            <img
+              src="../assets/Portfolio/Portfolio Card 1.png"
+              alt="Portofolio 1"
+            />
+            <h3 class="testimoni-card__text">Portofolio 1</h3>
+          </div>
+          <div class="testimoni-card">
+            <img
+              src="../assets/Portfolio/Portfolio Card 2.png"
+              alt="Portofolio 2"
+            />
+            <h3 class="testimoni-card__text">Portofolio 2</h3>
+          </div>
+          <div class="testimoni-card">
+            <img
+              src="../assets/Portfolio/Portfolio Card 3.png"
+              alt="Portofolio 3"
+            />
+            <h3 class="testimoni-card__text">Portofolio 3</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ TEAM -->
+      <section class="team h-170 lg:h-159 px-5 lg:35 py-10 lg:20 gap-8 lg:gap-16 bg-black flex flex-col justify-between items-center">
+        <div class="team__container w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4 flex flex-col justify-between items-center text-center">
+          <h2 class="team__title">Meet the Team</h2>
+          <h3 class="team__text">A group of future-ready tech makers.</h3>
+        </div>
+        <div class="team__grid w-88.25 lg:w-290 h-123 lg:h-77 gap-6 grid grid-cols-2 lg:grid-cols-4 items-center">
+          <div class="team-card">
+            <img
+              src="../assets/Team/Project Manager.png"
+              alt="Project Manager"
+              class="team-img"
+            />
+            <div class="team-card__container">
+              <h3 class="team-card__name">Jasper Kim</h3>
+              <h4 class="team-card__position">Project Manager</h4>
+            </div>
+          </div>
+          <div class="team-card">
+            <img
+              src="../assets/Team/Full-stack Developer.png"
+              alt="Full-stack Developer"
+              class="team-img"
+            />
+            <div class="team-card__container">
+              <h3 class="team-card__name">Alex Jonathan</h3>
+              <h4 class="team-card__position">Full-stack Developer</h4>
+            </div>
+          </div>
+          <div class="team-card">
+            <img 
+              src="../assets/Team/UI UX Designer.png" alt="UI/UX Designer"
+              class="team-img"
+            />
+            <div class="team-card__container">
+              <h3 class="team-card__name">Mario Lopez</h3>
+              <h4 class="team-card__position">UI/UX Designer</h4>
+            </div>
+          </div>
+          <div class="team-card">
+            <img 
+              src="../assets/Team/Data Scientist.png" alt="Data Scientist"
+              class="team-img"
+            />
+            <div class="team-card__container">
+              <h3 class="team-card__name">Jasper Kim</h3>
+              <h4 class="team-card__position">Data Scientist</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 3️⃣ ASIDE -->
+    <aside class="input h-155 lg:h-207 px-5 lg:px-35 py-10 lg:py-20 gap-6 lg:gap-16 bg-black flex flex-col justify-between items-center">
+      <div class="input__container w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4 flex flex-col justify-between items-center text-center">
+        <h2 class="input__title">Let's Collaborate</h2>
+        <h3 class="input__text">Need a tech team? We're ready to help</h3>
+      </div>
+      <div class="w-88.25 lg:w-148 h-110 lg:h-115 gap-8 flex flex-col justify-between items-center">
+        <div class="input-card h-91 lg:h-93 gap-4 lg:gap-5 flex flex-col justify-between items-center">
+          <div class="input-card__container name">
+          <label for="name">Name</label>
+          <input type="text" placeholder="   Enter your name" required />
+          </div>
+          <div class="input-card__container email">
+          <label for="email">Email</label>
+          <input type="email" placeholder="   Enter your email" required />
+          </div>
+          <div class="input-card__container message">
+          <label for="text">Message</label>
+          <input type="text" placeholder="   Enter your message" required />
+          </div>
+        </div>
+        <button type="submit" class="input__button w-88.5 lg:w-148 h-11 lg:h-12 rounded-full p-2 gap-1 text-sm lg:text-base leading-7 lg:leading-7.5 text-center text-white bg-primary">Send</button>
+      </div>
+    </aside>
+
+    <!-- 4️⃣ FOOTER -->
+    <footer class="footer h-18 lg:h-19.5 px-2 py-6 gap-2 border border-neutral-800 text-xs lg:text-base text-neutral-500 text-center bg-black">
+      © 2026 Web Programmer Hack. All rights reserved.
+    </footer>
   </body>
-</html>
+</html
