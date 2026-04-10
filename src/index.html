@@ -10,17 +10,26 @@
     <!-- 1️⃣ HEADER -->
     <header>
       <nav class="navbar h-16 lg:h-21 px-4 lg:px-35 py-3.5 lg:py-6 bg-black">
-        <div class="navbar__wrapper flex flex-row justify-between items-center text-neutral-25">
+        <div class="navbar__wrapper w-90.5 lg:w-290 m-auto flex flex-row justify-between items-center text-neutral-25">
           <div class="navbar__logo w-16.25 lg:w-40 h-9 lg:gap-2 font-bold text-2xl leading-9 items-center text-center">Tech.</div>
-          <div class="navbar__menu lg:w-88.25 lg:h-9 lg:gap-3 lg:font-normal lg:text-sm lg:leading-7 lg:flex lg:flex-row lg:justify-between lg:items-center">
-            <a href="#" class="navbar__link lg:gap-1.5">About</a>
-            <a href="#" class="navbar__link lg:gap-1.5">Service</a>
-            <a href="#" class="navbar__link lg:gap-1.5">Our Work</a>
-            <a href="#" class="navbar__link lg:gap-1.5">Team</a>
+          <div class="navbar__menu">
+            <ul class="w-88.25 h-9 gap-3 font-normal text-sm leading-7 hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
+              <li><a href="#" class="navbar__link lg:gap-1.5">About</a></li>
+              <li><a href="#" class="navbar__link lg:gap-1.5">Service</a></li>
+              <li><a href="#" class="navbar__link lg:gap-1.5">Our Work</a></li>
+              <li><a href="#" class="navbar__link lg:gap-1.5">Team</a></li>
+            </ul>
           </div>
-          <div class="navbar__button lg:w-40 lg:h-11 lg:rounded-full lg:p-2 lg:gap-1 lg:items-center lg:text-center bg-primary">
-            <a href="#" class="button__navbar lg:font-semibold lg:text-base lg:leading-7.5">Contact Us</a>
+          <div class="navbar__button lg:w-40 lg:h-11 lg:p-2 lg:gap-1 lg:rounded-full lg:items-center lg:text-center bg-primary">
+            <a href="#" class="button__navbar hidden lg:inline lg:font-semibold lg:text-base lg:leading-7.5">Contact Us</a>
           </div>
+          <button class="hamburger__button cursor-pointer">
+            <a href="#"></a>
+            <img src="../assets/Icon/menu-01.png" alt="menu"
+            class="inline lg:hidden">
+            <img src="../assets/Icon/x-close.png" alt="close"
+            class="hidden">
+          </button>
         </div>
       </nav>
     </header>
@@ -28,15 +37,12 @@
     <!-- 2️⃣ MAIN -->
     <main>
       <!-- ✅ HERO -->
-      <section class="hero h-180 lg:h-187.5 px-5 lg:px-35 py-10 gap-4.5 lg:gap-12 bg-linear-to-b from-black to-secondary flex flex-col lg:flex-row justify-between items-center">
-        <div class="hero__container w-88.5 lg:w-171.75 h-76 lg:h-70.5 flex flex-col justify-evenly items-start">
+      <section class="hero h-180 lg:h-187.5 px-5 lg:px-35 py-10 gap-4.5 lg:gap-12 bg-linear-to-b from-black to-secondary flex flex-col lg:flex-row justify-between items-center">     
+        <div class="hero__des w-88.5 lg:w-171.75 h-76 lg:h-70.5 flex flex-col justify-between items-start">
           <h1 class="hero__title text-[40px] lg:text-[56px] leading-10 lg:leading-17 font-bold text-neutral-25">
             Build with the <span class="italic">Future.</span>
           </h1>
-          <h3 class="hero__text">
-            From building sleek website and mobile apps to integrating AI
-            solution, we help brands turn ideas into powerful digital
-            experiences that connect, engage, and scale.
+          <h3 class="hero__text">From building sleek website and mobile apps to integrating AI solution, we help brands turn ideas into powerful digital experiences that connect, engage, and scale.
           </h3>
           <a href="#" class="hero__button w-88.5 lg:w-75 h-12 rounded-full p-2.5 lg:p-2.25 gap-1 text-sm lg:text-base leading-7 lg:leading-7.5 text-center text-white bg-primary">Let's Talk</a>
         </div>
@@ -131,6 +137,7 @@
             <img
               src="../assets/Portfolio/Portfolio Card 1.png"
               alt="Portofolio 1"
+              class="testimoni-img"
             />
             <h3 class="testimoni-card__text">Portofolio 1</h3>
           </div>
@@ -138,6 +145,7 @@
             <img
               src="../assets/Portfolio/Portfolio Card 2.png"
               alt="Portofolio 2"
+              class="testimoni-img"
             />
             <h3 class="testimoni-card__text">Portofolio 2</h3>
           </div>
@@ -145,6 +153,7 @@
             <img
               src="../assets/Portfolio/Portfolio Card 3.png"
               alt="Portofolio 3"
+              class="testimoni-img"
             />
             <h3 class="testimoni-card__text">Portofolio 3</h3>
           </div>
@@ -211,18 +220,18 @@
         <h3 class="input__text">Need a tech team? We're ready to help</h3>
       </div>
       <div class="w-88.25 lg:w-148 h-110 lg:h-115 gap-8 flex flex-col justify-between items-center">
-        <div class="input-card h-91 lg:h-93 gap-4 lg:gap-5 flex flex-col justify-between items-center">
-          <div class="input-card__container name">
-          <label for="name">Name</label>
-          <input type="text" placeholder="   Enter your name" required />
+        <div class="input-card h-91 lg:h-93 gap-1 lg:gap-5 flex flex-col justify-between items-start">
+          <div class="input-name">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" required />
           </div>
-          <div class="input-card__container email">
-          <label for="email">Email</label>
-          <input type="email" placeholder="   Enter your email" required />
+          <div class="input-email">
+           <label for="email">Email</label>
+           <input type="email" placeholder="Enter your email" required />
           </div>
-          <div class="input-card__container message">
-          <label for="text">Message</label>
-          <input type="text" placeholder="   Enter your message" required />
+          <div class="input-message">
+            <label for="text">Message</label>
+            <input type="text" placeholder="Enter your message" required />
           </div>
         </div>
         <button type="submit" class="input__button w-88.5 lg:w-148 h-11 lg:h-12 rounded-full p-2 gap-1 text-sm lg:text-base leading-7 lg:leading-7.5 text-center text-white bg-primary">Send</button>
