@@ -1,11 +1,5 @@
 @import 'tailwindcss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* ✅ THEME CUSTOMIZATION */
 @theme {
   /* ▶️ COLORS */
@@ -19,10 +13,6 @@
 
 body {
   @apply m-0 font-sans;
-}
-
-.container {
-  @apply w-88.5 lg:w-290 mx-auto;
 }
 
 h2 {
@@ -92,9 +82,9 @@ label {
 }
 
 input {
-  @apply w-88.25 h-12 px-4 py-2 text-base leading-7.5 border rounded-xl border-neutral-800 text-neutral-500;
+  @apply w-88.25 lg:w-148 h-12 px-4 py-2 text-base leading-7.5 border rounded-xl border-neutral-800 text-neutral-500;
 }
 
 .input-message input {
-  @apply w-88.25 h-33.5 px-4 py-2 text-base leading-7.5 border rounded-xl border-neutral-800 text-neutral-500;
+  @apply w-88.25 lg:w-148 h-33.5 px-4 pt-2 pb-24 text-base leading-7.5 border rounded-xl border-neutral-800 text-neutral-500;
 }
